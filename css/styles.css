@@ -1,0 +1,451 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+.baner-container {
+  padding: 0;
+}
+
+.banner-text {
+  padding-top: 0px;
+}
+
+.banner h2 {
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.banner p {
+  padding: 15px 0 40px 0;
+  font-size: 18px;
+}
+
+.banner {
+  background-image: url(../img/bg.jpg);
+  width: 100%;
+  min-height: 1000px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #56afbe;
+  color: #fff;
+  box-shadow: 0px 0rem 2rem 12px rgb(119 205 219 / 25%);
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  transition: 0.5s linear;
+  background-color: #2a7e8d;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  outline: none;
+  color: #fff;
+  border: none;
+}
+
+.banner-text {
+  max-width: 500px;
+}
+
+.about-container {
+  overflow: hidden;
+  display: flex;
+}
+
+.content-left {
+  padding: 100px 225px 50px 165px;
+  position: relative;
+}
+
+.content-right {
+  padding: 0;
+}
+
+.about-section h3 {
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 40px;
+}
+
+.about-section p {
+  font-size: 20px;
+  padding-top: 30px;
+  font-weight: 400;
+}
+.section-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.about-container:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img-cat img {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.video-section {
+  padding: 55px 0;
+  background-color: #e2e2e2;
+}
+
+.video-section h2 {
+  padding: 15px 0 45px 0;
+  font-size: 45px;
+}
+
+.circle {
+  position: absolute;
+  background: rgb(31, 20, 87);
+  border-radius: 50%;
+  color: #fff;
+  height: 140px;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+  top: 50%;
+  transform: translate(50%, -50%);
+  box-shadow: 0px 0rem 2rem 12px rgb(31 20 87 / 25%);
+  cursor: pointer;
+}
+
+.circle::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: 3px dashed rgb(31, 20, 87);
+  border-radius: 50%;
+}
+
+.circle:hover {
+  transition: 0.4s linear;
+  background-color: #fff;
+  color: rgb(31, 20, 87);
+  box-shadow: 0px 0rem 2rem 12px rgb(111 28 55 / 25%);
+}
+
+.circle:hover::before {
+  animation: 25s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about-container {
+  flex-direction: row;
+}
+
+.about-container:nth-child(even) .circle {
+  right: 100%;
+}
+
+.about-container:nth-child(odd) .circle {
+  right: 0%;
+}
+
+.circle p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.circle span,
+.circle p {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .banner {
+    background-position: revert;
+    min-height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .banner h2 {
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+    color: white;
+  }
+
+  .banner p {
+    padding: 10px 0 10px 0px;
+    font-size: 10px;
+    text-align: justify;
+    line-height: 10px;
+  }
+  .banner-text {
+    backdrop-filter: brightness(0.47);
+    width: 100%;
+    padding: 20px 40px;
+    max-width: unset;
+    color: whitesmoke;
+  }
+  .btn {
+    width: 150px;
+    height: 30px;
+    font-size: 11px;
+  }
+  .cash-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .content-left {
+    padding: 15px;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-section h3 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .about-section p {
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  .img-cat img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+  .circle {
+    height: 50px;
+    width: 50px;
+    top: 30%;
+  }
+  .about-container:nth-child(even) .circle {
+    right: 10%;
+  }
+
+  .about-container:nth-child(odd) .circle {
+    right: 10%;
+  }
+
+  .circle span,
+  .circle p {
+    font-size: 8px;
+  }
+  .video-section h2 {
+    padding: 20px 0 15px 0;
+    font-size: 25px;
+}
+.video-section {
+    padding: 0px;
+    background-color: #e2e2e2;
+}
+.video {
+    height: 300px;
+    padding: 10px 0;
+}
+}
+
+@media (min-width: 575px) and (max-width: 716px) {
+  .banner {
+    background-position: revert;
+    min-height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .banner h2 {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .banner p {
+    padding: 10px 0 10px 0px;
+    font-size: 12px;
+  }
+  .banner-text {
+    padding-top: 10px;
+  }
+  .btn {
+    width: 150px;
+    height: 30px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 1250px) {
+    .cash-btn {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+      }
+      .content-left {
+        padding: 15px 35px 15px 30px;
+      }
+    
+      .about-section h3 {
+        font-size: 15px;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+    
+      .about-section p {
+        font-size: 12px;
+        padding-top: 5px;
+      }
+      .img-cat img {
+        max-width: 100px;
+        max-height: 50px;
+      }
+      .circle {
+        height: 50px;
+        width: 50px;
+      }
+    
+      .circle span,
+      .circle p {
+        font-size: 8px;
+      }
+      .video-section h2 {
+        padding: 20px 0 15px 0;
+        font-size: 25px;
+    }
+    .video-section {
+        padding: 0px;
+        background-color: #e2e2e2;
+    }
+    .video {
+        height: 300px;
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 716px) and (max-width: 980px) {
+  .banner {
+    background-size: cover;
+    min-height: 400px;
+  }
+  .banner h2 {
+    font-size: 25px;
+    line-height: 20px;
+  }
+
+  .banner p {
+    padding: 10px 0 10px 5px;
+    font-size: 15px;
+  }
+  .banner-text {
+    padding-top: 15px;
+  }
+  .btn {
+    width: 150px;
+    height: 30px;
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1250px) {
+  .banner {
+    min-height: 400px;
+  }
+  .banner h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .banner p {
+    padding: 10px 0 10px 5px;
+    font-size: 14px;
+  }
+  .banner-text {
+    padding-top: 30px;
+  }
+  
+}
+
+@media (min-width: 1250px) and (max-width: 1550px) {
+  .banner {
+    min-height: 520px;
+  }
+  .banner h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .banner p {
+    padding: 10px 0 20px 0;
+    font-size: 14px;
+  }
+  .banner-text {
+    padding-top: 40px;
+  }
+  .cash-btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .content-left {
+    padding: 25px 85px 15px 80px;
+  }
+
+  .about-section h3 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+
+  .about-section p {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .img-cat img {
+    padding-top: 20px;
+    max-width: 140px;
+    max-height: 100px;
+  }
+  .circle {
+    height: 100px;
+    width: 100px;
+  }
+
+  .circle span,
+  .circle p {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1550px) and (max-width: 1820px) {
+  .banner {
+    min-height: 720px;
+  }
+}
+
+@media (min-width: 1821px) and (max-width: 2250px) {
+  .banner {
+    min-height: 820px;
+  }
+  .banner-text {
+    padding-top: 70px;
+  }
+}
