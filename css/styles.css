@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .baner-container {
   padding: 0;
 }
@@ -304,13 +305,13 @@ body {
       .content-left {
         padding: 15px 35px 15px 30px;
       }
-    
+
       .about-section h3 {
         font-size: 15px;
         font-weight: bold;
         padding-top: 10px;
       }
-    
+
       .about-section p {
         font-size: 12px;
         padding-top: 5px;
@@ -323,7 +324,7 @@ body {
         height: 50px;
         width: 50px;
       }
-    
+
       .circle span,
       .circle p {
         font-size: 8px;
@@ -382,7 +383,7 @@ body {
   .banner-text {
     padding-top: 30px;
   }
-  
+
 }
 
 @media (min-width: 1250px) and (max-width: 1550px) {
